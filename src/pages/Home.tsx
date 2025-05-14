@@ -16,7 +16,7 @@ class Home extends PureComponent<Props, State> {
         return (
         <div className="bg-gray-500 text-lg">
         <ul className="flex space p-4">
-            <a>Захаров Николай ФИИТ-22</a>
+            <a>Захаров Николай</a>
         </ul>
         </div>
         )
