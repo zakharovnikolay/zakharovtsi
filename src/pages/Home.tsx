@@ -1,4 +1,7 @@
-import React, { PureComponent, ReactNode } from 'react'
+import { PureComponent, type ReactNode } from 'react'
+import Text from '../components/Text';
+import  AddingProduct  from '../components/AddingProduct';
+import { GetRequestComponent } from '../components/GetRequestComponent';
 
 interface Props {}
 interface State {}
@@ -8,18 +11,19 @@ class Home extends PureComponent<Props, State> {
         super(props)
 
         this.state = {
-            
+
         }
     }
 
     render(): ReactNode {
         return (
-        <div className="bg-gray-500 text-lg">
-        <ul className="flex space p-4">
-            <a>Захаров Николай</a>
-        </ul>
-        </div>
-        )
+            <div className="bg-cover bg-center h-screen flex flex-col gap-3">
+                <Text size="large" color="primary" text="Практика 6 Хуки"/>
+                <AddingProduct/>
+                <Text size="large" color="secondary" text="Практика 8 Get"/>
+                <GetRequestComponent/>
+            </div>
+        );
     }
 }
 
